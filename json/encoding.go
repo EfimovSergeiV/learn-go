@@ -14,8 +14,13 @@ type User struct {
 }
 
 func main() {
-	u1 := User{1, "John", "Wick", 35}
-	json_data, err := json.Marshal(u1)
+	users := []User{
+		{Id: 1, Name: "Roger", LastName: "Roe", Age: 25},
+		{Id: 1, Name: "Roger", LastName: "Roe", Age: 25},
+		{Id: 1, Name: "Roger", LastName: "Roe", Age: 25},
+	}
+
+	json_data, err := json.Marshal(users)
 
 	if err != nil {
 		log.Fatal(err)
