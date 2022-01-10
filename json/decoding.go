@@ -13,19 +13,29 @@ type User struct {
 }
 
 func main() {
-	var u1 User
+	var user_data []User
 
-	data := []byte(`{
-		"Id": 1,
-		"Name": "John",
-		"Age": 20
-	}`)
+	data := []byte(`[
+		{"Id": 1, "Name": "John", "Age": 20},
+		{"Id": 2, "Name": "John1", "Age": 30},
+		{"Id": 3, "Name": "John2", "Age": 40}
+	]`)
 
-	err := json.Unmarshal(data, &u1)
+	err := json.Unmarshal(data, &user_data)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("This %s, %d Age", u1.Name, u1.Age)
+	for user := range user_data {
+		fmt.Println(user_data[user])
+	}
+
+	json_data, json_err := json.MarshalIndent(user_data, "", "    ")
+
+	if json_err != nil {
+		log.Fatal(json_err)
+	}
+
+	fmt.Println(string(json_data))
 }
