@@ -1,0 +1,26 @@
+[
+    {
+        "fack": "3445c227-7efc-11e5-be77-24fd52940c70",
+        "occupation": "gardener",
+        "born": "1992-03-02",
+        "price": 0.12
+    },
+    {
+        "fack": "3445c227-7efc-11e5-be77-24fd52940c70",
+        "occupation": "teacher",
+        "born": "1967-11-22",
+        "price": 0.12
+    },
+    {
+        "fack": "3445c227-7efc-11e5-be77-24fd52940c70",
+        "occupation": "accountant",
+        "born": "1995-04-07",
+        "price": 0.12
+    },
+    {
+        "fack": "3445c227-7efc-11e5-be77-24fd52940c70",
+        "occupation": "gardener",
+        "born": "1972-08-30",
+        "price": 0.12
+    }
+]
