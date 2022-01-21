@@ -1,2 +1,1 @@
-# learn-go
-Learn GO lang
+Изучаю основы и фишки GOlang
