@@ -39,3 +39,7 @@ func main() {
 
 	fmt.Println(string(json_data))
 }
+
+// type Parse struct {
+//     NameId string json:name_id"
+// }

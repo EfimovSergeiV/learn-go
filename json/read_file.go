@@ -8,14 +8,12 @@ import (
 	"os"
 )
 
-// {"shop_UID": "3445c227-7efc-11e5-be77-24fd52940c70", "prod_UID": "156ee9ce-a431-11eb-975c-080027048daf", "price": 0.0, "currency": "RUB", "quantity": 0.0}, {"shop_UID": "1d162cd3-886a-11e5-96e1-14dae9ee1802", "prod_UID": "156ee9ce-a431-11eb-975c-080027048daf", "price": 0.0, "currency": "RUB", "quantity": 0.0},
-
 type Prices struct {
-	ShopUID  string
-	ProdUID  string
-	Price    float64
-	Currency string
-	Quantity float64
+	Shop     string  `json:"shop_UID"`
+	Prod     string  `json:"prod_UID"`
+	Price    float64 `json:"price"`
+	Currency string  `json:"currency"`
+	Quantity float64 `json:"quantity"`
 }
 
 func main() {
